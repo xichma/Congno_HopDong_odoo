@@ -1,0 +1,19 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="hop_dong">
+            <field name="name">hop.dong.view</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form"/>
+            <field name="arch" type="xml">
+
+
+                <xpath expr="//field[@name='payment_term_id']" position="after">
+                    <field name="Contracts" string="Contract Management"/>
+                </xpath>
+                <xpath expr="//button[@name='action_cancel']" position='after'>
+                    <button name="my_button" string="Lap Hop Dong" type="object" attrs="{'invisible': [('Contracts','!=',True)]}"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

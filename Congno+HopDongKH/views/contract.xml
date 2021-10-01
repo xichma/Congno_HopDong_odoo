@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="shilal_object_sequence" model="ir.sequence">
+            <field name="name">Shilal Object Sequence</field>
+            <field name="prefix">s_O</field>
+            <field name="padding">6</field>
+            <field name="code">sequence.contract</field>
+        </record>
+        <record id="contract_form_view" model="ir.ui.view">
+            <field name="name">contract.form.view</field>
+            <field name="model">contact1234</field>
+
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <label for="sequence" string="Pet Name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="sequence"/>
+                            </h1>
+                        </div>
+                        <group name="images">
+                            <group>
+                                <field name="sequence" string="Ma Hop Dong"/>
+                                <field name="Hop_Dong_Khung" string="Hop Dong Khung"/>
+                                <field name="Thong_Tin_Hop_Dong" string="Thong Tin Hop Dong"/>
+                                <field name="Customer_ID" string="Customer ID"/>
+                                <field name="Sale_Order" string="Sale Order"/>
+                                <field name="Dia_Chi_Hop_Dong" string="Dia Chi Hop Dong"/>
+                                <field name="Ma_Hop_Dong" string="Ma Hop Dong"/>
+                                <field name="So_CCCD" string="So CCCD"/>
+                                <field name="Ngay_Cap" string="Ngay Cap"/>
+                                <field name="Noi_Cap" string="Noi Cap"/>
+                                <field name="Dia_Chi_Giao_Hang" string="Dia Chi Giao Hang"/>
+                            </group>
+                            <group>
+                                <field name="Loai_Hop_Dong" string="Loai Hop Dong"/>
+                                <field name="Ngay_Ky_Hop_Dong" string="Ngay Ky Hop Dong"/>
+                                <field name="Nguoi_Ky" string="Nguoi Ky"/>
+                                <field name="Chuc_Vu" string="Chuc Vu"/>
+                                <field name="Ngay_Thi_Cong_Hop_Dong" string="Ngay Thi Cong Hop Dong"/>
+                                <field name="Ngay_Ket_Thuc_Hop_Dong" string="Ngay Ket Thuc Hop Dong"/>
+                                <field name="Hang_Muc_Hop_Dong" string="Hang Muc Hop Dong"/>
+                                <field name="Amount_Total" string="Amount Total"/>
+                                <field name="Tien_Do_Hop_Dong" string="Tien Do Hop Dong"/>
+                                <field name="Ngay_Con_Lai" string="Ngay Con Lai"/>
+                                <field name="Ngay_Giao_Hang" string="Ngay Giao Hang"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>
